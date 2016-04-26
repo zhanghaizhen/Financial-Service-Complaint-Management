@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - complaint management Theme</title>
+    <title>Complaint Management</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
@@ -56,7 +56,7 @@
                         <a class="page-scroll" href="#about">submit</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">modeling</a>
+                        <a class="page-scroll" href="#services">model</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">code</a>
@@ -76,7 +76,7 @@
             <div class="header-content-inner">
                 <h1>Got A Financial Service Complaint To Handle?</h1>
                 <hr>
-                <p>This algorithm can help:
+                <p>This algorithem can help:
                   1. business to predict conplaint dispute probability for better customer relationship management;
                   2. consumer to predict company's resposne tio imporve the favorite outcome </p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Started</a>
@@ -90,17 +90,17 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">No more complaining headaches!</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Paste your customer's complaint text here to predict the his or her dispute probability, or paste your complaint draft here as a consumer to predict company's repsonse</p>
                     <form action="/dispute_predict" method='POST' >
-                          <textarea cols="40" rows="5" type="text" rows=5 style= "padding:5px; border:2px solid #ccc; color: black; -webkit-border-radius: 5px;border-radius: 5px; float:right; margin-right:12px;width: 300px;height:100px; float: right; margin-top: 0px;" size="2000" name="business_input" /></textarea>
+                          <textarea cols="40" rows="5" type="text" rows=5 style= "padding:5px; border:2px solid #ccc; color: black; -webkit-border-radius: 5px;border-radius: 5px; float:right; margin-right:40px;width: 300px;height:100px; float: right; margin-top: 0px;" size="2000" name="business_input" /></textarea>
 
-                          <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: teal; background-color: #FFFFC0; border: 0pt ridge lightgrey;float:right; margin-right:-300px;width: 40%; float: right;margin-top: 120px" value="Submit As Business"/>
+                          <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: teal; background-color: #FFFFC0; border: 0pt ridge lightgrey;float:left; margin-right:-250px;width: 30%; float: right;margin-top: 120px" value="Dispute Prediction"/>
                       </form>
 
 
                     <form action="/response_predict" method='POST' >
                             <textarea cols="40" rows="5" type="text" style="padding:5px; border:2px solid #ccc; color: black; -webkit-border-radius: 5px;border-radius: 5px;width: 300px;height:100px;" size="40"  name="consumer_input" /></textarea>
-                            <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: green; background-color: #FFFFC10; border: 0pt ridge lightgrey;margin-top: 20px;width: 40%" value="Submit As Consumer"/>
+                            <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: green; background-color: #FFFFC10; border: 0pt ridge lightgrey;margin-top: 20px;width: 30%" value="Response Prediction"/>
                         </form>
                 </div>
             </div>
@@ -111,7 +111,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">Model Highlights</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -120,30 +120,31 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+
+                        <img src="static/img/portfolio/cfpb.jpg" class="img-responsive" alt="">
+                        <h3>Training Data</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <img src="static/img/portfolio/python.jpg" class="img-responsive" alt="">
+                        <h3>Programming Language</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <img src="static/img/portfolio/NLP.jpg" class="img-responsive" alt="">
+                        <h3>Data Process</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <img src="static/img/portfolio/sklearn.png" class="img-responsive" alt="">
+                        <h3>Machine Learning Tool</h3>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
             </div>
@@ -155,14 +156,14 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/aws.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    AWS
                                 </div>
                             </div>
                         </div>
@@ -170,14 +171,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/pandas.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Pandas
                                 </div>
                             </div>
                         </div>
@@ -185,14 +186,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/flask.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Flask
                                 </div>
                             </div>
                         </div>
@@ -200,14 +201,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/numpy.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Numpy
                                 </div>
                             </div>
                         </div>
@@ -215,14 +216,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/plt.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    MatPlotLib
                                 </div>
                             </div>
                         </div>
@@ -230,14 +231,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="static/img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <img src="static/img/portfolio/psql.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Other Tools
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    PostgreSQL
                                 </div>
                             </div>
                         </div>
@@ -250,8 +251,8 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+                <h2>Check this github site for modeling details!</h2>
+                <a href="https://github.com/zhanghaizhen/Financial-Service-Complaint-Management" class="btn btn-default btn-xl wow tada">Github Site</a>
             </div>
         </div>
     </aside>
@@ -262,15 +263,15 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>If you are hiring, looking for a data scientist partner or have technical questions, Please Give me a call or send me an email and I will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                    <p>801-735-2626</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:harryzhangdata@gmail.com">harryzhangdata@gmail.com</a></p>
                 </div>
             </div>
         </div>
