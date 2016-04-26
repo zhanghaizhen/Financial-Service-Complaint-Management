@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Complaint Management</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">complaint management</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">submit</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">model</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">code</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Got A Financial Service Complaint To Handle?</h1>
+                <hr>
+                <p>This algorithem can help:
+                  1. business to predict conplaint dispute probability for better customer relationship management;
+                  2. consumer to predict company's resposne tio imporve the favorite outcome </p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">No more complaining headaches!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Paste your customer's complaint text here to predict the his or her dispute probability, or paste your complaint draft here as a consumer to predict company's repsonse</p>
+                    <form action="/dispute_predict" method='POST' >
+                          <textarea cols="40" rows="5" type="text" rows=5 style= "padding:5px; border:2px solid #ccc; color: black; -webkit-border-radius: 5px;border-radius: 5px; float:right; margin-right:40px;width: 300px;height:100px; float: right; margin-top: 0px;" size="2000" name="business_input" /></textarea>
+
+                          <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: teal; background-color: #FFFFC0; border: 0pt ridge lightgrey;float:left; margin-right:-250px;width: 30%; float: right;margin-top: 120px" value="Dispute Prediction"/>
+                      </form>
+
+
+                    <form action="/response_predict" method='POST' >
+                            <textarea cols="40" rows="5" type="text" style="padding:5px; border:2px solid #ccc; color: black; -webkit-border-radius: 5px;border-radius: 5px;width: 300px;height:100px;" size="40"  name="consumer_input" /></textarea>
+                            <input type="submit" style="font-face: 'Comic Sans MS'; font-size: larger; color: green; background-color: #FFFFC10; border: 0pt ridge lightgrey;margin-top: 20px;width: 30%" value="Response Prediction"/>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Model Highlights</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+
+                        <img src="static/img/portfolio/cfpb.jpg" class="img-responsive" alt="">
+                        <h3>Training Data</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="static/img/portfolio/python.jpg" class="img-responsive" alt="">
+                        <h3>Programming Language</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="static/img/portfolio/NLP.jpg" class="img-responsive" alt="">
+                        <h3>Data Process</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="static/img/portfolio/sklearn.png" class="img-responsive" alt="">
+                        <h3>Machine Learning Tool</h3>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/aws.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    AWS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/pandas.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    Pandas
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/flask.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    Flask
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/numpy.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    Numpy
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/plt.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    MatPlotLib
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/psql.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Other Tools
+                                </div>
+                                <div class="project-name">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Check this github site for modeling details!</h2>
+                <a href="https://github.com/zhanghaizhen/Financial-Service-Complaint-Management" class="btn btn-default btn-xl wow tada">Github Site</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>If you are hiring, looking for a data scientist partner or have technical questions, Please Give me a call or send me an email and I will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>801-735-2626</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:harryzhangdata@gmail.com">harryzhangdata@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/jquery.fittext.js"></script>
+    <script src="static/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="static/js/creative.js"></script>
+
+</body>
+
+</html>
