@@ -1,6 +1,6 @@
 # Financial Service Complaint Management
 
-![Head Picture](complaint_key.png)
+![Head Picture](img/complaint_key.png)
 ## Introduction
 Receiving a complaint from a consumer happens everyday in the world of business. While nobody likes complaint, an consumer’s complaint present business with an opportunity to identify and rectify specific problems with your current product or service. They can also help you to develop your relationship with your customer by allowing you to demonstrate that you value them by taking their concerns seriously and dealing with their complaint. Service complaints management is a critical part of business management. A good complaint management strategy will result in best customer relationship outcome with minimal human resource investment. On the other hand, consumers usually have  a hard time to understand company’s the complaint process, and end in dispute with response outcome.  Lack of understanding between business and consumer will certainly result in reduced efficiency of the total complaining process.
 
