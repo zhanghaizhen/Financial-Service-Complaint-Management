@@ -90,23 +90,28 @@ and consumers to predict company's response to improve the favorite outcome. </s
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">No more complaining headaches!</h2>
                     <hr class="light">
-<table><tr><td style="vertical-align:top; padding:4em">
-<p class="text-faded">Paste your customer's complaint text<br />
-		 here to predict the dispute probability.</p>
-                    <form action="/dispute_predict" method='POST' >
-                          <textarea cols="40" rows="5" type="text" rows=5 style="border-radius: 5px;color:black" size="2000" name="business_input" /></textarea>
-<br />
-
-                          <input type="submit" style="background:#006" value="Dispute Prediction"/>
-                      </form>
-</td><td style="vertical-align:top; padding:4em">
-                    <p class="text-faded">Paste your complaint
- draft here as a <br /> consumer to predict company's response</p>
-
-                    <form action="/response_predict" method='POST' >
-                            <textarea cols="40" rows="5" type="text" style="border-radius: 5px;color:black" size="40"  name="consumer_input" /></textarea></br /><input type="submit" style="background:#006" value="Response Prediction"/>
-                        </form>
-</td></tr></table>
+              			<div style="vertical-align:top; padding:4em">
+                			<p class="text-faded">
+                			  Paste your customer's complaint text<br />
+                				here to predict the dispute probability.
+                			</p>
+                      <form action="/dispute_predict" method='POST' >
+                        <textarea cols="40" rows="5" type="text" rows=5 style="border-radius: 5px;color:black" size="2000" name="business_input" /></textarea>
+              			    <br />
+              			    <input type="submit" style="background:#006" value="Dispute Prediction"/>
+              			  </form>
+              			</div>
+              			<div style="vertical-align:top; padding:4em">
+	                    <p class="text-faded">
+	                      Paste your complaint draft here as a <br />
+	                      consumer to predict company's response
+	                    </p>
+	                    <form action="/response_predict" method='POST' >
+	                      <textarea cols="40" rows="5" type="text" style="border-radius: 5px;color:black" size="40"  name="consumer_input" /></textarea>
+	                      </br />
+	                      <input type="submit" style="background:#006" value="Response Prediction"/>
+	                    </form>
+              			</div>
                 </div>
             </div>
         </div>
