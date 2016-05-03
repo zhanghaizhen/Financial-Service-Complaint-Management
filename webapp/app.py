@@ -63,7 +63,7 @@ def response_predict():
             results =  "Your complaint is predicted to be 'closed with EXPLANATION' and the probability for this prediction is: %5.3f. It's OK since most of the people will get this type of response anyway." %pred_prob
         if prediction == 2:
             results =  "Congraduations! Your complaint is predicted to be 'closed with RELIEF' and the probability for this prediction is: %5.3f" %pred_prob
-        return render_template('result.html', prediction = results)
+        return render_template('result.html', prediction=results)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True, threaded=True)
