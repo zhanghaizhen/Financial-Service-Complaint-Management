@@ -1,5 +1,5 @@
 # Fill missing 'State' info using valid zipcode.
-
+import pandas as pd
 from pyzipcode import ZipCodeDatabase
 
 def zipcode_state(df):

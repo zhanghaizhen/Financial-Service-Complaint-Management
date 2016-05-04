@@ -1,3 +1,5 @@
+import pandas as pd
+
 def fill_missing(df):
     # fill 'sub-issue' and 'Consumer complaint narrative' column missing value
     # with string value of 'Not Provided'
