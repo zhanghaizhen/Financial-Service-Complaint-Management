@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_validation import train_test_split
+import matplotlib.pyplot as plt
 
 def response_model(df, df_model):
     X = df_model.values

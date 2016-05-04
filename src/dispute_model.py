@@ -3,6 +3,7 @@ from sklearn.cross_validation import train_test_split
 import sklearn.metrics as skm
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
+import matplotlib.pyplot as plt
 
 def dispute_model(df):
     #subset the data for complaint narrative text that are not missing
@@ -53,5 +54,5 @@ def plot_roc(v_probs, y_test, title, xlabel, ylabel):
 
     plt.show()
 
-    return plot_roc(v_prob, y_test, "ROC plot of  complaint dispute prediction with text features,", 
+    return plot_roc(v_prob, y_test, "ROC plot of  complaint dispute prediction with text features,",
              "False Positive Rate (1 - Specificity)", "True Positive Rate (Sensitivity, Recall)")

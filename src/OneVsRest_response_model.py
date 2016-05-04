@@ -1,6 +1,12 @@
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
-def OneVsRest_reponse_model(df):
+import matplotlib.pyplot as plt
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import roc_curve, auc
+from sklearn.preprocessing import label_binarize
 
+def OneVsRest_reponse_model(df):
     X = df_model.values
     y = df['Company response to consumer']
     #binarize the label for one vs rest classifier
@@ -51,4 +57,3 @@ def plot_OneVsRest_roc(y_score,n_classes=3, y_test)
     plt.show()
 
     return plot_OneVsRest_roc(y_score,n_classes=3, y_test_bin)
-    
